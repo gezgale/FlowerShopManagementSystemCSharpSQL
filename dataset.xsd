@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataset" targetNamespace="http://tempuri.org/dataset.xsd" xmlns:mstns="http://tempuri.org/dataset.xsd" xmlns="http://tempuri.org/dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ResturantDbCnStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ResturantDbCnStr (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FlowerShop.Properties.Settings.GlobalReference.Default.ResturantDbCnStr" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="xtblDropFactorsTableAdapter" GeneratorDataComponentClassName="xtblDropFactorsTableAdapter" Name="xtblDropFactors" UserDataComponentName="xtblDropFactorsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ResturantDbCnStr (Settings)" DbObjectName="FlowerShop.dbo.xtblDropFactors" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FactorID, NameSnameCust FROM dbo.xtblDropFactors</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FactorID" DataSetColumn="FactorID" />
+              <Mapping SourceColumn="NameSnameCust" DataSetColumn="NameSnameCust" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="xtblFactorRptTableAdapter" GeneratorDataComponentClassName="xtblFactorRptTableAdapter" Name="xtblFactorRpt" UserDataComponentName="xtblFactorRptTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ResturantDbCnStr (Settings)" DbObjectName="FlowerShop.dbo.xtblFactorRpt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FactorID, FactorShDate, CustomerID, NameSname, FlowerID, FlowerDescription, FlowerQuantity, UnitPrice, Takhfif, TaxRate FROM dbo.xtblFactorRpt</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FactorID" DataSetColumn="FactorID" />
+              <Mapping SourceColumn="FactorShDate" DataSetColumn="FactorShDate" />
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="NameSname" DataSetColumn="NameSname" />
+              <Mapping SourceColumn="FlowerID" DataSetColumn="FlowerID" />
+              <Mapping SourceColumn="FlowerDescription" DataSetColumn="FlowerDescription" />
+              <Mapping SourceColumn="FlowerQuantity" DataSetColumn="FlowerQuantity" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Takhfif" DataSetColumn="Takhfif" />
+              <Mapping SourceColumn="TaxRate" DataSetColumn="TaxRate" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ResturantDbCnStr (Settings)" DbObjectName="FlowerShop.dbo.xtblFactorRpt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByFactorID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByFactorID" GeneratorSourceName="FillByFactorID" GetMethodModifier="Public" GetMethodName="GetDataByFactorID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByFactorID" UserSourceName="FillByFactorID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     FactorID, FactorShDate, CustomerID, NameSname, FlowerID, FlowerDescription, FlowerQuantity, UnitPrice, Takhfif, TaxRate
+FROM         xtblFactorRpt
+WHERE     (FactorID = @FactorID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FactorID" ColumnName="FactorID" DataSourceName="FlowerShop.dbo.xtblFactorRpt" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@FactorID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="FactorID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataset" msprop:Generator_UserDSName="dataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="xtblDropFactors" msprop:Generator_TableClassName="xtblDropFactorsDataTable" msprop:Generator_TableVarName="tablextblDropFactors" msprop:Generator_TablePropName="xtblDropFactors" msprop:Generator_RowDeletingName="xtblDropFactorsRowDeleting" msprop:Generator_RowChangingName="xtblDropFactorsRowChanging" msprop:Generator_RowEvHandlerName="xtblDropFactorsRowChangeEventHandler" msprop:Generator_RowDeletedName="xtblDropFactorsRowDeleted" msprop:Generator_UserTableName="xtblDropFactors" msprop:Generator_RowChangedName="xtblDropFactorsRowChanged" msprop:Generator_RowEvArgName="xtblDropFactorsRowChangeEvent" msprop:Generator_RowClassName="xtblDropFactorsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FactorID" msprop:Generator_ColumnVarNameInTable="columnFactorID" msprop:Generator_ColumnPropNameInRow="FactorID" msprop:Generator_ColumnPropNameInTable="FactorIDColumn" msprop:Generator_UserColumnName="FactorID" type="xs:int" />
+              <xs:element name="NameSnameCust" msprop:Generator_ColumnVarNameInTable="columnNameSnameCust" msprop:Generator_ColumnPropNameInRow="NameSnameCust" msprop:Generator_ColumnPropNameInTable="NameSnameCustColumn" msprop:Generator_UserColumnName="NameSnameCust" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="177" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="xtblFactorRpt" msprop:Generator_TableClassName="xtblFactorRptDataTable" msprop:Generator_TableVarName="tablextblFactorRpt" msprop:Generator_TablePropName="xtblFactorRpt" msprop:Generator_RowDeletingName="xtblFactorRptRowDeleting" msprop:Generator_RowChangingName="xtblFactorRptRowChanging" msprop:Generator_RowEvHandlerName="xtblFactorRptRowChangeEventHandler" msprop:Generator_RowDeletedName="xtblFactorRptRowDeleted" msprop:Generator_UserTableName="xtblFactorRpt" msprop:Generator_RowChangedName="xtblFactorRptRowChanged" msprop:Generator_RowEvArgName="xtblFactorRptRowChangeEvent" msprop:Generator_RowClassName="xtblFactorRptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FactorID" msprop:Generator_ColumnVarNameInTable="columnFactorID" msprop:Generator_ColumnPropNameInRow="FactorID" msprop:Generator_ColumnPropNameInTable="FactorIDColumn" msprop:Generator_UserColumnName="FactorID" type="xs:int" />
+              <xs:element name="FactorShDate" msprop:Generator_ColumnVarNameInTable="columnFactorShDate" msprop:Generator_ColumnPropNameInRow="FactorShDate" msprop:Generator_ColumnPropNameInTable="FactorShDateColumn" msprop:Generator_UserColumnName="FactorShDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" type="xs:decimal" />
+              <xs:element name="NameSname" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNameSname" msprop:Generator_ColumnPropNameInRow="NameSname" msprop:Generator_ColumnPropNameInTable="NameSnameColumn" msprop:Generator_UserColumnName="NameSname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FlowerID" msprop:Generator_ColumnVarNameInTable="columnFlowerID" msprop:Generator_ColumnPropNameInRow="FlowerID" msprop:Generator_ColumnPropNameInTable="FlowerIDColumn" msprop:Generator_UserColumnName="FlowerID" type="xs:int" />
+              <xs:element name="FlowerDescription" msprop:Generator_ColumnVarNameInTable="columnFlowerDescription" msprop:Generator_ColumnPropNameInRow="FlowerDescription" msprop:Generator_ColumnPropNameInTable="FlowerDescriptionColumn" msprop:Generator_UserColumnName="FlowerDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FlowerQuantity" msprop:Generator_ColumnVarNameInTable="columnFlowerQuantity" msprop:Generator_ColumnPropNameInRow="FlowerQuantity" msprop:Generator_ColumnPropNameInTable="FlowerQuantityColumn" msprop:Generator_UserColumnName="FlowerQuantity" type="xs:double" />
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" />
+              <xs:element name="Takhfif" msprop:Generator_ColumnVarNameInTable="columnTakhfif" msprop:Generator_ColumnPropNameInRow="Takhfif" msprop:Generator_ColumnPropNameInTable="TakhfifColumn" msprop:Generator_UserColumnName="Takhfif" type="xs:decimal" />
+              <xs:element name="TaxRate" msprop:Generator_ColumnVarNameInTable="columnTaxRate" msprop:Generator_ColumnPropNameInRow="TaxRate" msprop:Generator_ColumnPropNameInTable="TaxRateColumn" msprop:Generator_UserColumnName="TaxRate" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

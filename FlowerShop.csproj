@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{846AE065-E3B6-45A9-8084-0700D5F13BD2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlowerShop</RootNamespace>
+    <AssemblyName>FlowerShop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Windows Folder.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Stimulsoft.Base, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Net 2009.2\Bin\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Net 2009.2\Bin\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Net 2009.2\Bin\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_GlobalVar.cs" />
+    <Compile Include="Class_ShamsiTools.cs" />
+    <Compile Include="Class_tblLogs.cs" />
+    <Compile Include="Class_tblUsers.cs" />
+    <Compile Include="dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineCustomer.Designer.cs">
+      <DependentUpon>frmDefineCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefineFlowers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineFlowers.Designer.cs">
+      <DependentUpon>frmDefineFlowers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUsers.Designer.cs">
+      <DependentUpon>frmEditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactor.Designer.cs">
+      <DependentUpon>frmFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactorPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactorPrint.Designer.cs">
+      <DependentUpon>frmFactorPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowerCategury.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlowerCategury.Designer.cs">
+      <DependentUpon>frmFlowerCategury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlowerUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlowerUnits.Designer.cs">
+      <DependentUpon>frmFlowerUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMdi.Designer.cs">
+      <DependentUpon>frmMainMdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMojodi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMojodi.Designer.cs">
+      <DependentUpon>frmMojodi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchCustomer.Designer.cs">
+      <DependentUpon>frmSearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSC_RestuRant.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSC_RestuRant.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCalculator.resx">
+      <DependentUpon>frmCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineCustomer.resx">
+      <DependentUpon>frmDefineCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineFlowers.resx">
+      <DependentUpon>frmDefineFlowers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUsers.resx">
+      <DependentUpon>frmEditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactor.resx">
+      <DependentUpon>frmFactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactorPrint.resx">
+      <DependentUpon>frmFactorPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlowerCategury.resx">
+      <DependentUpon>frmFlowerCategury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlowerUnits.resx">
+      <DependentUpon>frmFlowerUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMojodi.resx">
+      <DependentUpon>frmMojodi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCustomer.resx">
+      <DependentUpon>frmSearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dataset.xsc">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dataset.xss">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="LSC_RestuRant.dbml.layout">
+      <DependentUpon>LSC_RestuRant.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmMainMdi.resx">
+      <DependentUpon>frmMainMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="LSC_RestuRant.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LSC_RestuRant.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LSC_RestuRantDataContext.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="xtblDropFactor.datasource" />
+    <None Include="xtblMizaneForoosh.datasource" />
+    <None Include="xtblTotalSaleRates_SelectAllResult.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resturant_BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File_MnuIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security_MnuIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report_MnuIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_MnuIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_MnuIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Btn_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_Sma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1001_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Btn_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Btn_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodUnit_Ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unit_2Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insurance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1300877789_cash_register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borsalino Blanc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bassckground_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art.png" />
+    <None Include="Resources\ii77er.jpg" />
+    <None Include="Resources\Booo.jpg" />
+    <Content Include="Windows Folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.5, 11.375" name="LSC_RestuRant">
+  <DataContextMoniker Name="/LSC_RestuRantDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8d413a29-a520-4583-8a2f-8e8d53821c7c" absoluteBounds="0.75, 6.75, 2, 2.0822371419270826">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblCustomer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="092cc84d-2958-40e3-8093-3675a7df1579" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ef3ed6d-3ec0-4e88-a085-e22f5e84b03a" absoluteBounds="6.75, 7, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblUserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20992967-e95a-45b2-af5e-1d262828520a" absoluteBounds="6.765, 7.46, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01974d05-6126-4edf-bd73-15afb978c253" absoluteBounds="6.25, 0.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblFactorDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9057790-49b7-47b4-bf98-afb4675202d1" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2bfdaa3e-0b6a-4480-8ecd-38fe28a3bc62" absoluteBounds="3.5, 7.125, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblFactorID" />
+      <nestedChildShapes>
+        <elementListCompartment Id="627f3de7-08f9-4406-9b96-fe4d05bcb7dd" absoluteBounds="3.515, 7.585, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15b22916-10f2-4634-8a6c-758e8e7b36fa" absoluteBounds="0.75, 4.125, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblFlowerCategury" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd882798-47b5-4358-9fa5-d606c2940d51" absoluteBounds="0.765, 4.585, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="792f630a-a7bf-4ce7-a664-02865c5ce06b" absoluteBounds="3.5, 4, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblFlowerDescription" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bb34845-23b8-41d0-9f0e-2f7acc154ec5" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9de36d2a-7530-41a9-86bd-d285362475cc" absoluteBounds="0.75, 2.125, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblFlowerUnit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3b8831c-c988-4a7f-911f-b844d459d775" absoluteBounds="0.765, 2.585, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83372025-72dd-48c4-b348-cda98e273069" absoluteBounds="12.25, 6.875, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23f617bf-a08d-4c27-a2df-5969da57f248" absoluteBounds="12.265, 7.335, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="566ba882-4c2a-46f4-9a7f-ac55c6782604" absoluteBounds="6.25, 3.875, 2, 1.5891951497395822">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblMojodi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2dbdf3cb-b5c2-4df0-9aca-342859f7f790" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 7.125); (5.875 : 6.75); (5.875 : 1.70894490559896); (6.25 : 1.70894490559896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblFactorID/tblFactorID_tblFactorDetail" />
+      <nodes>
+        <classShapeMoniker Id="2bfdaa3e-0b6a-4480-8ecd-38fe28a3bc62" />
+        <classShapeMoniker Id="01974d05-6126-4edf-bd73-15afb978c253" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.75525024414063); (3.5 : 7.75525024414063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblCustomer/tblCustomer_tblFactorID" />
+      <nodes>
+        <classShapeMoniker Id="8d413a29-a520-4583-8a2f-8e8d53821c7c" />
+        <classShapeMoniker Id="2bfdaa3e-0b6a-4480-8ecd-38fe28a3bc62" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 4); (4.5 : 2.21966985839844); (5.79166666666667 : 2.21966985839844 : JumpStart); (5.95833333333333 : 2.21966985839844 : JumpEnd); (6.25 : 2.21966985839844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblFlowerDescription/tblFlowerDescription_tblFactorDetail" />
+      <nodes>
+        <classShapeMoniker Id="792f630a-a7bf-4ce7-a664-02865c5ce06b" />
+        <classShapeMoniker Id="01974d05-6126-4edf-bd73-15afb978c253" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.67307657877604); (3.5 : 4.67307657877604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblFlowerCategury/tblFlowerCategury_tblFlowerDescription" />
+      <nodes>
+        <classShapeMoniker Id="15b22916-10f2-4634-8a6c-758e8e7b36fa" />
+        <classShapeMoniker Id="792f630a-a7bf-4ce7-a664-02865c5ce06b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.72041150797526); (3.9687475 : 2.72041150797526); (3.9687475 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblFlowerUnit/tblFlowerUnit_tblFlowerDescription" />
+      <nodes>
+        <classShapeMoniker Id="9de36d2a-7530-41a9-86bd-d285362475cc" />
+        <classShapeMoniker Id="792f630a-a7bf-4ce7-a664-02865c5ce06b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.71242390950521); (5.79166666666667 : 4.71242390950521 : JumpStart); (5.95833333333333 : 4.71242390950521 : JumpEnd); (6.25 : 4.71242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblFlowerDescription/tblFlowerDescription_tblMojodi" />
+      <nodes>
+        <classShapeMoniker Id="792f630a-a7bf-4ce7-a664-02865c5ce06b" />
+        <classShapeMoniker Id="566ba882-4c2a-46f4-9a7f-ac55c6782604" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="89c622f2-3b24-4443-bd1f-61df6e4c853e" absoluteBounds="9.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/xtblDropFactor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aba5c2da-5e0e-4802-989b-33d176fc5808" absoluteBounds="9.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a22f3c53-48da-47e7-9c72-9aaaf0826aaf" absoluteBounds="0.75, 9.75, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/xtblTotalSaleRate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db2ee830-5f1a-4d09-b23e-e54b845cc0d5" absoluteBounds="0.765, 10.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ac61e74-07c7-42b5-8c89-1fe381aecceb" absoluteBounds="9.75, 2.75, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/xtblFactorRpt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a760141-1a81-4e4f-9298-ec9c37276e48" absoluteBounds="9.765, 3.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="198da4d2-6129-49c0-8768-590107358235" absoluteBounds="9.75, 9.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/xtblMizaneForoosh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b04e17f8-e5c6-433d-a026-b44ed888efc7" absoluteBounds="9.765, 10.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd8e1929-535c-4ec2-9eb6-f161aa2c8a44" absoluteBounds="6.5, 9.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/xtblMandehGol" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05edbec7-4c60-4128-a603-80cd5038b873" absoluteBounds="6.5150000000000006, 9.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b22a79ab-5c23-4664-8f39-4600f35f6b3b" absoluteBounds="3.75, 9.125, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/xtblFlowerSelect" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfa88b78-3c05-4812-b18b-f9fec6dae0b3" absoluteBounds="3.765, 9.585, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="361aae42-43f4-44ce-8e16-134f3f0a40a0" absoluteBounds="9.5, 6.125, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/LSC_RestuRantDataContext/tblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3c7572f-627a-4422-b0c5-a3f2abfdea37" absoluteBounds="9.515, 6.585, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.5 : 7.58742390950521); (12.25 : 7.58742390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblUser/tblUser_tblLog" />
+      <nodes>
+        <classShapeMoniker Id="361aae42-43f4-44ce-8e16-134f3f0a40a0" />
+        <classShapeMoniker Id="83372025-72dd-48c4-b348-cda98e273069" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 7.54807657877604); (9.5 : 7.54807657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LSC_RestuRantDataContext/tblUserType/tblUserType_tblUser" />
+      <nodes>
+        <classShapeMoniker Id="2ef3ed6d-3ec0-4e88-a085-e22f5e84b03a" />
+        <classShapeMoniker Id="361aae42-43f4-44ce-8e16-134f3f0a40a0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
